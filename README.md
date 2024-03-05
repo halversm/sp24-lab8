@@ -24,5 +24,19 @@ Write your answers to the questions below.
 * What questions did you have about the material in the chapters? What did you find confusing?
 
 
+### Exercise 1: What familiar design pattern does this chapter employ?
+
+Write your answers to the questions below.
+
+* What design pattern do you think Wilson is using in section 10.4, and why?
+* How might you use this pattern to implement other kinds of archive features/properties?
+
+### Exercise 2: Applying the ideas in this chapter to your group project
+
+Many of the concepts---and their implementations---in this chapter could be useful for your personal archive project. With your partner, discuss how you might extend the code from this chapter to be useful in your group project. Why and how might you do so?
+
+Include a summary of your discussion here.
+
+### Exercise 3: SDX section 10.6
 
 Write a short summary of what you did (which exercises) below.
