@@ -34,15 +34,20 @@ def current_time():
 # [/time]
 
 # [write]
-def write_manifest(backup_dir, file_name, manifest):
+def write_manifest(backup_dir, file_name, manifest, flag):
     backup_dir = Path(backup_dir)
     if not backup_dir.exists():
         backup_dir.mkdir()
     manifest_file = Path(backup_dir, f"{file_name}.csv")
-    with open(manifest_file, "w") as raw:
-        writer = csv.writer(raw)
-        writer.writerow(["filename", "hash"])
-        writer.writerows(manifest)
+    if flag == "BACKUPS CSV":
+        with open(f"{manifest_file}.csv", "w") as raw:
+            writer = csv.writer(raw)
+            writer.writerow(["filename", "hash"])
+            writer.writerows(manifest)
+    elif flag == "BACKUPS JSON":
+        with open(f"{manifest_file}.json", "w") as raw:
+            pass
+
 # [/write]
 
 if __name__ == "__main__":
